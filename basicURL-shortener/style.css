@@ -1,0 +1,34 @@
+/* Add this CSS to your HTML file or in a separate stylesheet */
+/* Define the shake animation */
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(-10px);
+    }
+    30%, 50%, 70% {
+      transform: translateX(10px);
+    }
+  }
+  
+  /* Apply the shake animation to the 'shake' class */
+  .shake {
+    animation: shake 1.0s ease-in-out;
+  }
+  
+  @keyframes floatIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the float-in animation to the shortenedUrlContainer */
+  .float-in {
+    animation: floatIn 0.75s ease-out;
+  }
